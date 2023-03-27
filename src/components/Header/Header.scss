@@ -1,3 +1,96 @@
 .header{
-    color: red;
+    padding: 0px 20px 0px 20px;
+    height: 60px;
+    display: flex;
+    background-color: #131820;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+
+}
+
+// Amazon logo
+
+.header-logo{
+    width: 100px;
+    object-fit: contain;
+    margin: 16px 20px 0px 0px;
+}
+
+//Search Bar
+
+.header-search-bar{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    border-radius: 80%;
+}
+
+.header-search-input{
+    height: 12px;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.header-search-icon{
+    border-radius: 0px 5px 5px 0px;
+    padding: 5px;
+    height: 22px !important;
+    background-color: #cd9042;
+    cursor: pointer;
+}
+
+//Options
+
+//common styling
+
+.header-nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header-option{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 10px 0px 10px;
+    color: white;
+}
+
+.header-option-one{
+    font-size: 10px;
+}
+
+.header-option-two{
+    font-size: 15px;
+    font-weight: 800;
+}
+
+//location option, shopping option
+
+.header-option-location,.header-option-cart{
+    display: flex;
+    flex-direction: row;
+    margin: 0px 10px 0px 10px;
+    color: white;
+}
+
+.header-location,.header-option-cart-inner{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.header-location-icon{
+    margin: 5px 0px 0px 0px;
+}
+
+.header-shoppingcart-icon{
+    margin: 8px 0px 0px 0px;
+}
+
+.header-option-count{
+    font-size: 10px;
 }
