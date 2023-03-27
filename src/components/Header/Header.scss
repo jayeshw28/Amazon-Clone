@@ -50,6 +50,7 @@
 .header-nav{
     display: flex;
     justify-content: space-evenly;
+    padding-left: 20px;
 }
 
 .header-option{
@@ -60,12 +61,13 @@
 }
 
 .header-option-one{
-    font-size: 10px;
+    font-family: Amazon-Lt;
+    font-size: 12px;
 }
 
 .header-option-two{
-    font-size: 15px;
-    font-weight: 800;
+    font-family: Amazon-Bd;
+    font-size: 16px;
 }
 
 //location option, shopping option
@@ -84,13 +86,16 @@
 
 
 .header-location-icon{
-    margin: 5px 0px 0px 0px;
+    margin: 8px 0px 0px 0px;
 }
 
 .header-shoppingcart-icon{
     margin: 8px 0px 0px 0px;
+
 }
 
 .header-option-count{
-    font-size: 10px;
+    color: #cd9042;
+    font-family: Amazon-Lt;
+    font-size: 12px;
 }

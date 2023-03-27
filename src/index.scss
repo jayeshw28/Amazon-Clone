@@ -7,6 +7,21 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+@font-face {
+  font-family: "Amazon-Lt";
+  src: local(Amazon-Lt), url(./fonts/AmazonEmber_Lt.ttf) format(truetype);
+}
+
+@font-face {
+  font-family: "Amazon-Medium";
+  src: local(Amazon-Medium), url(./fonts/Amazon-Ember-Medium.ttf) format(truetype);
+}
+
+@font-face {
+  font-family: "Amazon-Bd";
+  src: local(Amazon-Bd), url(./fonts/AmazonEmber_Bd.ttf) format(truetype);
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
