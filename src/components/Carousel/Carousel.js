@@ -22,6 +22,7 @@ function Carousel() {
             <div><img className='carousel-slide-img' src='https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/61tjBFsRL+L._SX3000_.jpg'/></div>
             <div><img className='carousel-slide-img' src='https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/61JkX-1tN9L._SX3000_.jpg'/></div>
         </Slider>
+        <div className='carousel-fade-div'></div>
     </div>
   )
 }
