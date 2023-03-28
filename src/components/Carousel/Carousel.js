@@ -6,7 +6,6 @@ import Slider from "react-slick";
 
 function Carousel() {
     let settings = {
-      dots: true,
       infinite: true,
       speed: 500,
       slidesToShow: 1,
@@ -16,7 +15,6 @@ function Carousel() {
 
   return (
     <div className='carousel'>
-      <div className='carousel-fade-div'></div>
       <Slider {...settings} className='carousel-slider'>
         <div><img className='carousel-slide-img' src='https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/51O45Sl0WLL._SX3000_.jpg'/></div>
         <div><img className='carousel-slide-img' src='https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/61O759bS39L._SX3000_.jpg'/></div>
