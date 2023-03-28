@@ -1,6 +1,13 @@
 .carousel{
     overflow: hidden;
+    position: relative;
 }
+
+.carousel-slider{
+    position:absolute ;
+
+}
+
 .carousel-slider.div{
     z-index: -1;
     height: 0.5vh;
@@ -11,8 +18,10 @@
 }
 
 .carousel-fade-div{
-    background-image: linear-gradient(to bottom);
-    background-color: black;
+    position: absolute;
+    background-image: linear-gradient(to bottom,#11111100,  #ffffff,);
     width: 100%;
-    height: 200px;
+    margin-top: 280px;
+    height: 320px;
+    z-index: 1;
 }
