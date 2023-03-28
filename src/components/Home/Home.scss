@@ -1,3 +1,10 @@
 .Home{
     min-height: calc(100vh - 70px);
 }
+
+.home-products{
+    width: 100%;
+    position: relative;
+    margin-top: -350px;
+    z-index: 1;
+}

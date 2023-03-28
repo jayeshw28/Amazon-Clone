@@ -3,6 +3,13 @@
     position: relative;
 }
 
+li.slick-active button{
+    color: white;
+}
+button{
+    z-index: 1;
+}
+
 .carousel-slider{
     position:absolute ;
 
