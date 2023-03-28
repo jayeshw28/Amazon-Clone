@@ -6,7 +6,6 @@ import Product from '../Product/Product';
 function Home() {
   return (
     <div className='Home'>
-      <div className='home-top-wrap'>
         <Carousel className='carousel-main'/>
         <div className='home-products'>           
           <div className='home-row'>
@@ -24,7 +23,6 @@ function Home() {
             {/*Product*/}
           </div>
         </div>
-      </div>
     </div>
   )
 }
