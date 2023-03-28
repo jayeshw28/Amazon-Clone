@@ -1,7 +1,7 @@
 .product{
     display:flex;
     flex-direction: column;
-    align-items:center;
+    align-items:flex-start;
     justify-content: flex-end;
     margin: 10px;
     padding: 20px;
@@ -13,7 +13,7 @@
 
 .product-info{
     height: 100px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .product-para{
@@ -51,11 +51,13 @@
 }
 
 .product > img{
-    max-height: 200px;
+    max-height: 300px;
     width: 100%;
     object-fit: contain;
+    margin-top: 10px;
     margin-bottom: 15px;
 }
+
 
 .product > button{
     background-color: #ffa41c;
