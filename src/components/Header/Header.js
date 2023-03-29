@@ -1,7 +1,7 @@
 import React from 'react'
 import './Header.scss'
 import SearchIcon from '@mui/icons-material/Search';
-import LocationOnIcon from '@mui/icons-material/LocationOn';
+import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 
 function Header() {
@@ -9,7 +9,7 @@ function Header() {
     <div className='header'>
       <img className='header-logo' src='http://pngimg.com/uploads/amazon/amazon_PNG11.png'/>
       <div className='header-option-location'>
-        <LocationOnIcon className='header-location-icon'/>
+        <LocationOnOutlinedIcon className='header-location-icon'/>
         <div className='header-location'>
           <span className='header-option-one'>Hello</span>
           <span className='header-option-two'>Select Your Address</span>
