@@ -8,7 +8,6 @@ function Home() {
     <div className='Home'>
         <Carousel className='carousel-main'/>
         <div className='home-products'>
-
           <div className='home-row'>
             <Product 
               id='123456'

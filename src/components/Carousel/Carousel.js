@@ -16,11 +16,11 @@ function Carousel() {
   return (
     <div className='carousel'>
       <Slider {...settings} className='carousel-slider'>
-        <div><img className='carousel-slide-img' src='https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/51O45Sl0WLL._SX3000_.jpg'/></div>
-        <div><img className='carousel-slide-img' src='https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/61O759bS39L._SX3000_.jpg'/></div>
-        <div><img className='carousel-slide-img' src='https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/51ovs76vmtL._SX3000_.jpg'/></div>
-        <div><img className='carousel-slide-img' src='https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/61tjBFsRL+L._SX3000_.jpg'/></div>
-        <div><img className='carousel-slide-img' src='https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/61JkX-1tN9L._SX3000_.jpg'/></div>
+        <div><img className='carousel-slide-img' src='https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/51O45Sl0WLL._SX3000_.jpg' alt='Amazon.in image'/></div>
+        <div><img className='carousel-slide-img' src='https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/61O759bS39L._SX3000_.jpg' alt='Amazon.in image'/></div>
+        <div><img className='carousel-slide-img' src='https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/51ovs76vmtL._SX3000_.jpg' alt='Amazon.in image'/></div>
+        <div><img className='carousel-slide-img' src='https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/61tjBFsRL+L._SX3000_.jpg' alt='Amazon.in image'/></div>
+        <div><img className='carousel-slide-img' src='https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/61JkX-1tN9L._SX3000_.jpg' alt='Amazon.in image'/></div>
       </Slider> 
     </div>
   )

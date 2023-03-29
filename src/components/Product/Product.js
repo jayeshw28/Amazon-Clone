@@ -12,7 +12,7 @@ function Product({title,image,price,rating}) {
             </p>
             <div className='product-rating'><p>{rating}</p></div>
         </div>
-        <img src={image}/>
+        <img src={image} alt='Amazon.in cards'/>
         <button>Add to Cart</button>
     </div>
   )

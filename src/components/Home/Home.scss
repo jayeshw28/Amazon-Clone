@@ -1,6 +1,6 @@
 .Home{
     min-height: calc(100vh - 70px);
-    display: flex;
+    // display: flex;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
@@ -8,8 +8,8 @@
 }
 
 .home-products{
-    position: absolute;
-    margin-top: 280px;
+    // position: absolute;
+    margin-top: -280px;
     width: 100%;
     z-index: 1;
 }
