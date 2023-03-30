@@ -3,11 +3,12 @@ import './Header.scss'
 import SearchIcon from '@mui/icons-material/Search';
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
     <div className='header'>
-      <img className='header-logo' src='http://pngimg.com/uploads/amazon/amazon_PNG11.png'/>
+      <Link to='/'><img className='header-logo' src='http://pngimg.com/uploads/amazon/amazon_PNG11.png'/></Link>
       <div className='header-option-location'>
         <LocationOnOutlinedIcon className='header-location-icon'/>
         <div className='header-location'>
@@ -26,21 +27,27 @@ function Header() {
           <span className='header-option-one'>Hello,Jayesh</span>
           <span className='header-option-two'>Sign In</span>
         </div>
+
         <div className='header-option'>
           <span className='header-option-one'>Returns</span>
           <span className='header-option-two'>& Orders</span>
         </div>
+
         <div className='header-option'>
           <span className='header-option-one'>Your</span>
           <span className='header-option-two'>Prime</span>
         </div>
-        <div className='header-option-cart'>
-          <ShoppingCartOutlinedIcon className='header-shoppingcart-icon'/>
-          <div className='header-option-cart-inner'>
-            <span className='header-option-count'>0</span>
-            <span className='header-option-two'>Cart</span>
+
+        <Link to='/checkout'>
+          <div className='header-option-cart'>
+            <ShoppingCartOutlinedIcon className='header-shoppingcart-icon'/>
+            <div className='header-option-cart-inner'>
+              <span className='header-option-count'>0</span>
+              <span className='header-option-two'>Cart</span>
+            </div>
           </div>
-        </div>
+        </Link>
+
       </div>
 
     </div>

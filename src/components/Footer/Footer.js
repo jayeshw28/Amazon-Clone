@@ -1,5 +1,7 @@
 import React from 'react'
 import './Footer.scss'
+import LanguageOutlinedIcon from '@mui/icons-material/LanguageOutlined';
+import ArrowDropDownOutlinedIcon from '@mui/icons-material/ArrowDropDownOutlined';
 
 function Footer() {
   return (
@@ -47,7 +49,7 @@ function Footer() {
             <hr/>
             <div className='footer-body-link-2'>
               <img src='http://pngimg.com/uploads/amazon/amazon_PNG11.png'/>
-              <button>🌐  English ▼</button>
+              <button><LanguageOutlinedIcon className='outline-icon'/>  English <ArrowDropDownOutlinedIcon/></button>
             </div>
             
         </div>

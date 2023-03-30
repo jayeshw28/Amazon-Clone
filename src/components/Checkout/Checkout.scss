@@ -1,0 +1,36 @@
+.checkout{
+    display: flex;
+    font-family: Amazon-Lt;
+    padding: 20px;
+    height: max-content;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.checkout-left{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 15px;
+}
+
+.checkout-title{
+    span{
+        font-size: 25px;
+        font-weight: 600;
+        margin: 10px;
+        padding: 10px;
+        border-bottom: 1px solid lightgray;
+    }
+}
+
+.checkout-right{
+    background-color: white;
+    padding: 15px;
+}
+
+.checkout-desc{
+    color: #087e63;
+}
