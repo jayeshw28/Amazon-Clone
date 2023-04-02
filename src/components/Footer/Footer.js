@@ -55,7 +55,7 @@ function Footer() {
         </div>
         <div className='footer-links'>
             <div className='footer-links-link'>
-              <a href='#'>Conditions of Use & Sale</a>
+              <a href=''>Conditions of Use & Sale</a>
               <a href=''>Privacy Notice</a>
               <a href=''>Interest-Based Ads</a>
             </div>
