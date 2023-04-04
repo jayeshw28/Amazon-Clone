@@ -28,7 +28,6 @@ function Checkout() {
           </div>
         </div>
         <Subtotal/>
-        <button className='buy-button'>Proceed to Buy</button>
       </div>
     </div>
   )

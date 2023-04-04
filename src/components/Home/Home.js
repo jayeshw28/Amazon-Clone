@@ -25,7 +25,7 @@ function Home() {
             />
             <Product
             id=''
-            title='OnePlus 10R 5G (Sierra Black, 8GB RAM, 128GB Storage, 80W)'
+            title='OnePlus 10R 5G (Black, 8GB RAM, 128GB Storage)'
             price={31999}
             rating='★★★★☆'
             image='https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/41o3CoW58tL._SX300_SY300_QL70_FMwebp_.jpg'
