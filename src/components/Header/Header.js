@@ -4,8 +4,10 @@ import SearchIcon from '@mui/icons-material/Search';
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import { Link } from 'react-router-dom';
+import { useStateValue } from '../StateProvider/StateProvider';
 
 function Header() {
+  const [{ cart }, dispatch] = useStateValue();
   return (
     <div className='header'>
       <Link to='/'><img className='header-logo' src='http://pngimg.com/uploads/amazon/amazon_PNG11.png'/></Link>
@@ -42,7 +44,7 @@ function Header() {
           <div className='header-option-cart'>
             <ShoppingCartOutlinedIcon className='header-shoppingcart-icon'/>
             <div className='header-option-cart-inner'>
-              <span className='header-option-count'>0</span>
+              <span className='header-option-count'>{cart.length}</span>
               <span className='header-option-two'>Cart</span>
             </div>
           </div>
