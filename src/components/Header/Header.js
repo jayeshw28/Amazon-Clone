@@ -8,6 +8,7 @@ import { useStateValue } from '../StateProvider/StateProvider';
 
 function Header() {
   const [{ cart }, dispatch] = useStateValue();
+  
   return (
     <div className='header'>
       <Link to='/'><img className='header-logo' src='http://pngimg.com/uploads/amazon/amazon_PNG11.png'/></Link>

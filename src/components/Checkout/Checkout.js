@@ -2,19 +2,31 @@ import React from 'react'
 import './Checkout.scss'
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import Subtotal from '../Subtotal/Subtotal';
+import { useStateValue } from '../StateProvider/StateProvider';
+import CheckoutProduct from '../CheckoutProduct/CheckoutProduct';
 
 function Checkout() {
+  const [{ cart }, dispatch] = useStateValue();
+
   return (
     <div className='checkout'>
       <div className='checkout-left'>
         <div className='checkout-title'>
           <span>Shopping Cart</span>
+          <p>price</p>
         </div>
-          {/*Basket*/}
-          {/*Basket*/}
-          {/*Basket*/}
-          {/*Basket*/}
-          {/*Basket*/}
+
+        {cart.map(item=> (
+          <CheckoutProduct
+            id={item.id}
+            title={item.title}
+            image={item.image}
+            price={item.price}
+            rating={item.rating}
+            />
+        ))
+        }
+
       </div>
 
       <div className='checkout-right'>

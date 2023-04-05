@@ -61,13 +61,13 @@
 
 
 .product > button{
-    background-color: #ffa41c;
     margin-top: 10px;
-    border: 1px solid;
-    border-color: #a88734;
-    border-radius: 3px;
-    font-family: Amazon-Lt;
     font-weight: 500;
+    height: 30px;
+    font-family: Amazon-Lt;
+    border-radius: 5px;
+    border: none;
+    background-color: #ffd814;
     cursor: pointer;
     &:hover{
         background-color: #e29521;
