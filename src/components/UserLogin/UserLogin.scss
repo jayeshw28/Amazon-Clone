@@ -1,0 +1,134 @@
+.login{
+    padding: 10px;
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-logo{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+    img{
+        max-width: 100px;
+    }
+    span{
+        text-decoration: none;
+    }
+}
+
+.login-outerbox{
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-content: flex-start;
+    justify-content: space-evenly;
+    align-items: stretch;
+    flex-wrap: wrap;
+    button{
+        background-image: linear-gradient(#ffffff ,#e1e1e1);
+        border: 1px solid gray;
+        border-radius: 2px;
+        height: 30px;
+        cursor: pointer;
+
+        &:active{
+            background-image: none;
+            background-color: #e1e1e1;
+            box-shadow: 0 0 10px 2px #f1c658;
+        }
+    } 
+}
+
+.login-box{
+    padding: 20px;
+    width: 300px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    font-family: Amazon-Lt;
+    font-weight: 550;
+    align-content: flex-start;
+    justify-content: space-evenly;
+    align-items: stretch;
+    flex-wrap: wrap;
+    font-size: 14px;
+    large{
+        font-family: Amazon-Medium;
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-bottom: 15px;
+
+        a{
+            margin:10px 0px 5px 0px;
+            font-weight: 600;
+        }
+
+        input{
+            height:25px;
+            width:98%;
+            background-color: white;
+            border: 1px solid rgb(101, 101, 101);
+            border-radius: 3px;
+            &:active{
+                border: 1px solid #f1c658;
+                box-shadow: 0 0 10px 2px #f1c658;
+            }
+        }
+    }
+
+    button{
+        background-image: linear-gradient(#f6e9c6 ,#f1c658);
+        border: 1px solid gray;
+        border-radius: 2px;
+        height: 30px;
+        cursor: pointer;
+
+        &:active{
+            background-image: none;
+            background-color: #f1c658;
+            box-shadow: 0 0 10px 2px #f1c658;
+        }
+    }
+
+    a{
+        margin: 10px 0px 10px 0px;
+    }
+}
+
+.login-bottom{
+    width: 100%;
+    margin: 20px 0px 20px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: stretch;
+    color: gray;
+    font-size: 12px;
+    font-weight: 600;
+    a{
+        margin: 5px;
+        padding: 0px;
+        width:80%;
+    }
+    hr{
+        width: 100%;
+    }
+}
