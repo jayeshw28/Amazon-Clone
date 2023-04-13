@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './UserLogin.scss'
 import { Link } from 'react-router-dom';
+import { auth } from '../../firebase';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 
 function UserLogin() {
@@ -13,6 +14,13 @@ function UserLogin() {
   }
   const Register = e =>{
     e.preventDefault();
+    auth
+      .createUserWithEmailAndPassword(Email, Password)
+      .then((auth) => {
+        //new user account is created
+        console.log(auth);
+      })
+      .catch(error => alert(error.message))
 
     //firebase register process
   }
