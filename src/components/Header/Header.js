@@ -1,13 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Header.scss'
 import SearchIcon from '@mui/icons-material/Search';
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import { Link } from 'react-router-dom';
 import { useStateValue } from '../StateProvider/StateProvider';
+import { auth } from '../../firebase';
 
 function Header() {
-  const [{ cart }, dispatch] = useStateValue();
+  const [{ cart, user }, dispatch] = useStateValue();
+  const HandleAuth = () =>{
+    if(user){
+      auth.signOut();
+    }
+  } ;
   
   return (
     <div className='header'>
@@ -25,11 +31,11 @@ function Header() {
         <SearchIcon className='header-search-icon'/>
       </div>
 
-      <div className='header-nav'>
-        <Link to='/login'>
-          <div className='header-option'>
-            <span className='header-option-one'>Hello,Jayesh</span>
-            <span className='header-option-two'>Sign In</span>
+      <div className='header-nav' title={user?'Click to Sign Out':'go to Sign In'}>
+        <Link to={!user && '/login'}>
+          <div className='header-option' onClick={HandleAuth}>
+            <span className='header-option-one'>Hello, {user?user.email.substring(0, user.email.indexOf("@")): 'Guest'}</span>
+            <span className='header-option-two'>{user?'Sign Out':'Sign In'}</span>
           </div>
         </Link>
 
@@ -39,10 +45,13 @@ function Header() {
           <span className='header-option-two'>& Orders</span>
         </div>
 
-        <div className='header-option'>
-          <span className='header-option-one'>Your</span>
-          <span className='header-option-two'>Prime</span>
-        </div>
+        <Link to='https://www.primevideo.com'>
+          <div className='header-option'>
+            <span className='header-option-one'>Your</span>
+            <span className='header-option-two'>Prime</span>
+          </div>
+        </Link>
+
 
         <Link to='/checkout'>
           <div className='header-option-cart'>

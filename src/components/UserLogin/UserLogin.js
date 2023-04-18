@@ -1,24 +1,35 @@
 import React, { useState } from 'react'
 import './UserLogin.scss'
-import { Link } from 'react-router-dom';
+import { Link, Navigate, useNavigate } from 'react-router-dom';
 import { auth } from '../../firebase';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 
 function UserLogin() {
+  const navigate = useNavigate();
   const [Email, SetEmail] = useState('');
   const [Password, SetPassord] = useState('');
   const SignIn = e =>{
     e.preventDefault();
-
     //firebase login process
+    auth
+      .signInWithEmailAndPassword(Email, Password)
+      .then((auth) => {
+        //new user account is created
+        if(auth){
+          navigate.push('/');
+        }
+      })
+      .catch(error => alert(error.message))
   }
   const Register = e =>{
     e.preventDefault();
     auth
       .createUserWithEmailAndPassword(Email, Password)
-      .then((auth) => {
+      .then(auth => {
         //new user account is created
-        console.log(auth);
+        if(auth){
+          navigate.push('/');
+        }
       })
       .catch(error => alert(error.message))
 
@@ -36,7 +47,7 @@ function UserLogin() {
     <div className='login-outerbox'>
     <div className='login-box'>
       <large>Sign in</large>
-      <form>
+      <form action="/">
         <a>E-mail</a>
         <input type='text' onChange={e => SetEmail(e.target.value)}/>
         <a>Password</a>

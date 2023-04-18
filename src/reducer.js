@@ -1,5 +1,6 @@
 export const initialState ={
     cart: [],
+    user: null
 };
 
 export const getCartTotal = (cart) =>
@@ -37,6 +38,11 @@ const reducer = (state, action) => {
             //     ...state,
             //      cart: state.cart.filter(item => item.id !== action.id)
             // }
+        case 'SET_USER':
+            return{
+                ...state,
+                user: action.user
+            }
         default:
             return state;
     }
