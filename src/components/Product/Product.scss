@@ -70,7 +70,11 @@
     background-color: #ffd814;
     cursor: pointer;
     &:hover{
-        background-color: #e29521;
+        background-image: linear-gradient(#f3a838,#ffe97a);
+    }
+    &:active{
+        -moz-animation-duration: 2ms;
+        font-size: 85%;
     }
 
 }
