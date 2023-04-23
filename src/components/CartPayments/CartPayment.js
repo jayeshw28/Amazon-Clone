@@ -4,9 +4,15 @@ import LockIcon from "@mui/icons-material/Lock";
 import CheckoutProduct from "../CheckoutProduct/CheckoutProduct";
 import { useStateValue } from "../StateProvider/StateProvider";
 import Subtotal from "../Subtotal/Subtotal";
+import { Link } from "react-router-dom";
+import { UseStripe, UseElements } from "@stripe/react-stripe-js";
 
 function CartPayment() {
   const [{ cart, user }, dispatch] = useStateValue();
+
+  const stripe = UseStripe();
+  const elements = UseElements();
+
   return (
     <div className="payment">
       <div className="payment-nav">
@@ -34,7 +40,7 @@ function CartPayment() {
                   New Usmanpura <br />
                   AURANGABAD, MAHARASHTRA 431005 India
                   <br />
-                  <a>Add Delivery Instructions</a>
+                  <span>Add Delivery Instructions</span>
                 </span>
               </div>
             </li>
@@ -44,6 +50,11 @@ function CartPayment() {
                 <br />
 
                 <div className="card">
+                  <div className="card-state">
+                    {cart.length == 0
+                      ? "Your Amazon Cart is Empty."
+                      : "Cart Preview"}
+                  </div>
                   {cart.map((item) => (
                     <CheckoutProduct
                       id={item.id}

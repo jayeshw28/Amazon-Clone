@@ -1,0 +1,37 @@
+.policy {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+.policy-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  text-align: center;
+  margin: 20px;
+  padding: 15px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+
+h1 {
+  font-size: 30px;
+  font-family: Amazon-Medium;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid lightgrey;
+}
+
+h4 {
+  font-size: 20px;
+  font-family: Amazon-Medium;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid lightgrey;
+}
