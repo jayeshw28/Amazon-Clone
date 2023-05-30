@@ -1,23 +1,23 @@
-.carousel{
-    overflow: hidden;
-    position: relative;
+.carousel {
+  overflow: hidden;
+  position: relative;
 }
 
-li.slick-active button{
-    color: white;
+li.slick-active button {
+  color: white;
 }
-button{
-    z-index: 1;
-}
-
-.carousel-slider.div{
-    z-index: -1;
-    height: 0.5vh;
+button {
+  z-index: 1;
 }
 
-.carousel-slide-img{
-    width: 100%;
-    z-index: -1;
-    // margin-bottom: -150px;
-    mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+.carousel-slider.div {
+  z-index: -1;
+  height: 0.5vh;
+}
+
+.carousel-slide-img {
+  width: 100%;
+  z-index: -1;
+  // margin-bottom: -150px;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
