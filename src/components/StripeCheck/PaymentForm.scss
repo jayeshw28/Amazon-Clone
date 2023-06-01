@@ -1,0 +1,48 @@
+.FormGroup {
+  margin: 0 0px 20px;
+  padding: 0;
+  border-style: none;
+  background-image: linear-gradient(white, #eae8e8);
+  will-change: opacity, transform;
+  box-shadow: 0 6px 9px rgba(50, 50, 93, 0.06), 0 2px 5px rgba(0, 0, 0, 0.08);
+  border: 1px solid #989898;
+  border-radius: 4px;
+}
+
+.FormRow {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.StripeElement--webkit-autofill {
+  background: transparent !important;
+}
+
+.StripeElement {
+  width: 100%;
+  padding: 11px 15px 11px 0;
+}
+
+button {
+  height: 30px;
+  font-family: Amazon-Lt;
+  border-radius: 5px;
+  border: none;
+  margin-top: 10px;
+  background-color: #ffd814;
+  cursor: pointer;
+  &:hover {
+    background-image: linear-gradient(#f3a838, #ffe97a);
+  }
+  &:active {
+    -moz-animation-duration: 2ms;
+    font-size: 85%;
+  }
+}
+
+.pay-button {
+  width: 100%;
+}

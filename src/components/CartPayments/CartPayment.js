@@ -2,38 +2,13 @@ import React, { useState } from "react";
 import "./CartPayment.scss";
 import LockIcon from "@mui/icons-material/Lock";
 import CheckoutProduct from "../CheckoutProduct/CheckoutProduct";
+import StripeContainer from "../StripeCheck/StripeContainer";
 import { useStateValue } from "../StateProvider/StateProvider";
-import { Link } from "react-router-dom";
-import { loadStripe } from "@stripe/stripe-js";
-import { UseStripe, UseElements, CardElement } from "@stripe/react-stripe-js";
-import StripeCheckout from "react-stripe-checkout";
 import { getCartTotal } from "../../reducer";
-
-// const promise = loadStripe(
-//   "pk_test_51N06I0SJxsVZXSFaCZ19Rw9JcaKNSAOeGeLjUyhh6eqXRNvEVKb5HLUKEoKehZFoAEVUv9TzcwwWZQnc4na3fanC00epz0ZJN3"
-// );
 
 function CartPayment() {
   const [{ cart, user }, dispatch] = useStateValue();
-
-  // const stripe = UseStripe();
-  // const elements = UseElements();
-
-  // const [error, setError] = useState(null);
-  // const [disabled, setDisabled] = useState(true);
-
-  // const HandleSubmit = (e) => {
-  //   e.preventDefault();
-  // };
-
-  // const HandleChange = (e) => {
-  //   setDisabled(e.empty);
-  //   setError(e.error ? e.error.message : "");
-  // };
-
-  const onToken = (token) => {
-    console.log(token);
-  };
+  const [showItem, setShowItem] = useState(false);
 
   return (
     <div className="payment">
@@ -105,14 +80,16 @@ function CartPayment() {
                 <a href="">Details</a>
                 <br />
                 <div className="payment-button-div">
-                  <StripeCheckout
-                    className="payment-button"
-                    stripeKey="pk_test_51N06I0SJxsVZXSFaCZ19Rw9JcaKNSAOeGeLjUyhh6eqXRNvEVKb5HLUKEoKehZFoAEVUv9TzcwwWZQnc4na3fanC00epz0ZJN3"
-                    token={onToken}
-                    amount={getCartTotal(cart) * 100}
-                    name="Amazon Clone"
-                    currency="INR"
-                  />
+                  {showItem ? (
+                    <StripeContainer />
+                  ) : (
+                    <div>
+                      <h3>₹ {getCartTotal(cart)}</h3>
+                      <button onClick={() => setShowItem(true)}>
+                        Pay With Card
+                      </button>
+                    </div>
+                  )}
                 </div>
               </div>
             </div>
