@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cors());
 
-app.post("/payment", cors(), async (req, res) => {
+app.post("/payments", cors(), async (req, res) => {
   let { amount, id } = req.body;
   try {
     const payment = await stripe.paymentIntents.create({
@@ -33,10 +33,6 @@ app.post("/payment", cors(), async (req, res) => {
   }
 });
 
-app.get("/", (req, res) => {
-  res.send("Hello World!");
-});
-
-app.listen(process.env.port || 4000, () => {
-  console.log("Server is running on port 4000.");
+app.listen(process.env.port || 5000, () => {
+  console.log("Server is running on port 5000.");
 });

@@ -23,11 +23,14 @@ function App() {
   const [backenddata, setBackenddata] = useStateValue([{}]);
 
   useEffect(() => {
-    fetch("/api").then((response) =>
-      response.json().then((data) => {
-        setBackenddata(data);
-      })
-    );
+    //fetching data from backend
+    // fetch("/api").then((response) =>
+    //   response.json().then((data) => {
+    //     setBackenddata(data);
+    //   })
+    // );
+
+    //user login authentication
     auth.onAuthStateChanged((authUser) => {
       console.log("USER_IS >>>", authUser);
 
