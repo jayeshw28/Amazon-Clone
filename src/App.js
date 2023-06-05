@@ -5,7 +5,7 @@ import Footer from "./components/Footer/Footer";
 import Checkout from "./components/Checkout/Checkout";
 import { Route, Routes } from "react-router-dom";
 import UserLogin from "./components/UserLogin/UserLogin";
-import { useEffect } from "react";
+import { useEffect, UseState } from "react";
 import { useStateValue } from "./components/StateProvider/StateProvider";
 import { auth } from "./firebase";
 import CartPayment from "./components/CartPayments/CartPayment";
@@ -20,7 +20,14 @@ const promise = loadStripe(
 function App() {
   const [{}, dispatch] = useStateValue();
 
+  const [backenddata, setBackenddata] = useStateValue([{}]);
+
   useEffect(() => {
+    fetch("/api").then((response) =>
+      response.json().then((data) => {
+        setBackenddata(data);
+      })
+    );
     auth.onAuthStateChanged((authUser) => {
       console.log("USER_IS >>>", authUser);
 
