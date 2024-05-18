@@ -19,35 +19,35 @@ function Carousel() {
         <div>
           <img
             className="carousel-slide-img"
-            src="https://i.ibb.co/j6C2nBV/51k-Jem3-UTp-L-SX3000.jpg"
+            src="carousel1.jpg"
             alt="Amazon.in image"
           />
         </div>
         <div>
           <img
             className="carousel-slide-img"
-            src="https://i.ibb.co/s2H1Tr0/61-Gkz9-UJCHL-SX3000.jpg"
+            src="carousel2.jpg"
             alt="Amazon.in image"
           />
         </div>
         <div>
           <img
             className="carousel-slide-img"
-            src="https://i.ibb.co/RStR7d2/614-GNcu-W2n-L-SX3000.jpg"
+            src="carousel3.jpg"
             alt="Amazon.in image"
           />
         </div>
         <div>
           <img
             className="carousel-slide-img"
-            src="https://i.ibb.co/SBxgR2f/81-ISh8gkl-L-SX3000.jpg"
+            src="carousel4.jpg"
             alt="Amazon.in image"
           />
         </div>
         <div>
           <img
             className="carousel-slide-img"
-            src="https://i.ibb.co/hmPVzTq/A1-HZYpow-YRL-SX3000.jpg"
+            src="carousel5.jpg"
             alt="Amazon.in image"
           />
         </div>
