@@ -19,35 +19,35 @@ function Carousel() {
         <div>
           <img
             className="carousel-slide-img"
-            src="https://m.media-amazon.com/images/I/61zAjw4bqPL._SX3000_.jpg"
+            src="https://i.ibb.co/j6C2nBV/51k-Jem3-UTp-L-SX3000.jpg"
             alt="Amazon.in image"
           />
         </div>
         <div>
           <img
             className="carousel-slide-img"
-            src="https://m.media-amazon.com/images/I/71QRxZvKnGL._SX3000_.jpg"
+            src="https://i.ibb.co/s2H1Tr0/61-Gkz9-UJCHL-SX3000.jpg"
             alt="Amazon.in image"
           />
         </div>
         <div>
           <img
             className="carousel-slide-img"
-            src="https://m.media-amazon.com/images/I/61lwJy4B8PL._SX3000_.jpg"
+            src="https://i.ibb.co/RStR7d2/614-GNcu-W2n-L-SX3000.jpg"
             alt="Amazon.in image"
           />
         </div>
         <div>
           <img
             className="carousel-slide-img"
-            src="https://m.media-amazon.com/images/I/71Ie3JXGfVL._SX3000_.jpg"
+            src="https://i.ibb.co/SBxgR2f/81-ISh8gkl-L-SX3000.jpg"
             alt="Amazon.in image"
           />
         </div>
         <div>
           <img
             className="carousel-slide-img"
-            src="https://m.media-amazon.com/images/I/71U-Q+N7PXL._SX3000_.jpg"
+            src="https://i.ibb.co/hmPVzTq/A1-HZYpow-YRL-SX3000.jpg"
             alt="Amazon.in image"
           />
         </div>
